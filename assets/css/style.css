@@ -1,0 +1,20 @@
+nav{
+    text-align: center;
+    font-display: bold;
+    font-size: 50px;
+    font-family: fantasy;
+    line-height: 120px;
+}
+
+h2, h4{
+    text-align: center;
+}
+
+#submit{
+    text-align: center;
+    font-size: 30px;
+}
+
+img{
+    height: 85px;
+}

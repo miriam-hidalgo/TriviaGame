@@ -1,0 +1,185 @@
+<!--## Option One: Basic Quiz (Timed Form)
+    //Demo](https://youtu.be/fBIj8YsA9dk)**.
+    //You'll create a trivia form with multiple choice or true/false options (your choice).
+    //The player will have a limited amount of time to finish the quiz. 
+    //The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+    //Don't let the player pick more than one answer per question.
+    //Don't forget to include a countdown timer.
+    
+    //Reminder: Submission on BCS
+    //Please submit both the deployed Github.io link to your homework AND the link to the Github Repository!
+    
+    //Minimum Requirements
+    //Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed. Adding a README.md as well as adding this homework to your portfolio are required as well and more information can be found below.
+    
+    //Create a README.md
+    //Add a `README.md` to your repository describing the project. Here are some resources for creating your `README.md`. Here are some resources to help you along the way:
+    //[About READMEs](https://help.github.com/articles/about-readmes/)
+    //[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+    
+    //Add To Your Portfolio
+    //After completing the homework please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. To receive an 'A' on any assignment, you must link to it from your portfolio.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rick & Morty Trivia Game!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">Rick & Morty Trivia Game!</nav>
+
+    <img src="assets/images/arcade.png">
+    <img src="assets/images/bethandjerry.png">
+    <img src="assets/images/meeseeks.png">
+    <img src="assets/images/mortyjr.jpg">
+    <img src="assets/images/park.jpg">
+    <img src="assets/images/portal.jpg">
+    <img src="assets/images/rick&morty.jpg">
+    <img src="assets/images/rickjerrymorty.jpg">
+    <img src="assets/images/rickmorty.jpg">
+
+    <br>
+        <h2>What was Rick's favorite exhibit in Anatomy Park?</h2> 
+            <h4>
+                <form class="incorrect">
+                    <input type="radio" name="answer1" value="It's Raining Liver" checked>It's Raining Liver<br>
+                    <input type="radio" name="answer1" value="Heart to Heart Conversations">Heart to Heart Conversations<br>
+                    <input class="correct" type="radio" name="answer1" value="Pirates of the Pancreas"> Pirates of the Pancreas<br>
+                    <input type="radio" name="answer1" value=" It's a Small Spleen Afterall">It's a Small Spleen Afterall<br>
+                </form>
+            </h4>
+
+        <br>
+
+        <h2>What is Jerry's favorite movie?</h2> 
+            <h4>
+                <form>
+                    <input class="correct" type="radio" name="answer2" value="Titanic" checked>Titanic<br>
+                    <input type="radio" name="answer2" value="The Matrix">The Matrix<br>
+                    <input type="radio" name="answer2" value="John Michael Vincent"> John Michael Vincent<br>
+                    <input type="radio" name="answer2" value="It's a Small Spleen Afterall">The Notebook<br>
+                </form>
+            </h4>
+        <br>
+
+        <h2>What does Snuffles want to be called now that he abandoned his slave name?</h2>  
+            <h4>
+                <form>
+                    <input type="radio" name="answer3" value="Twinkles" checked>Twinkles<br>
+                    <input class="correct" type="radio" name="answer3" value="Snowball">Snowball<br>
+                    <input type="radio" name="answer3" value="David">David<br>
+                    <input type="radio" name="answer3" value="Spot">Spot<br>
+                </form>
+            </h4>
+
+        <br>
+
+        <h2>Who is the voice actor for Rick Sanchez?</h2>  
+            <h4>
+                <form>
+                    <input type="radio" name="answer4" value="Seth Green" checked>Seth Green<br>
+                    <input type="radio" name="answer4" value="Seth McFarland">Seth McFarland<br>
+                    <input type="radio" name="answer4" value="Al Roker">Al Roker<br>
+                    <input class="correct" type="radio" name="answer4" value="Justin Roiland">Justin Roiland<br>
+                </form>
+            </h4>
+
+        <br>
+
+        <h2>What does Rick claim is a weapon to scare off villagers during the purge?</h2>  
+            <h4>
+                <form>
+                    <input type="radio" name="answer5" value="Spoon" checked>Spoon<br>
+                    <input type="radio" name="answer5" value="Gun">Gun<br>
+                    <input type="radio" name="answer5" value="Pitchfork">Pitchfork<br>
+                    <input class="correct" type="radio" name="answer5" value="Tic Tacs">Tic Tacs<br>
+                </form>
+            </h4>
+
+        <br>
+
+        <h2>What is the name of the book Morty Jr. writes?</h2>  
+            <h4>
+                <form>
+                    <input type="radio" name="answer6" value="Dancing in the Dark" checked>Dancing in the Dark<br>
+                    <input class="correct" type="radio" name="answer6" value="My Horrible Father">My Horrible Father<br>
+                    <input type="radio" name="answer6" value="My Father Lies">My Father Lies<br>
+                    <input type="radio" name="answer6" value="Four Hands Make a Right">Four Hands Make a Right<br>
+                </form>
+            </h4>
+
+        <br>
+
+        <h2>What game does Morty play at Blips and Chitz?</h2>  
+            <h4>
+                <form>
+                    <input type="radio" name="answer7" value="Space Invaders" checked>Space Invaders<br>
+                    <input class="correct" type="radio" name="answer7" value="Roy">Roy<br>
+                    <input type="radio" name="answer7" value="Stan">Stan<br>
+                    <input type="radio" name="answer7" value="Blitz">Blitz<br>
+                </form>
+            </h4>
+
+        <br>
+
+        <h2>What animal does Rick use for Morty's love potion?</h2>  
+            <h4>
+                <form>
+                    <input class="correct" type="radio" name="answer8" value="Vole" checked>Vole<br>
+                    <input type="radio" name="answer8" value="Praying Mantis">Praying Mantis<br>
+                    <input type="radio" name="answer8" value="Glorback">Glorback<br>
+                    <input type="radio" name="answer8" value="Raptor"> Raptor<br>
+                </form>
+            </h4>
+
+        <br>
+
+        <h2>What do the guards in the embassy call Pickle Rick?</h2>  
+            <h4>
+                <form>
+                    <input type="radio" name="answer9" value="Babayaga" checked>Babayaga<br>
+                    <input type="radio" name="answer9" value="The Destroyer">The Destroyer<br>
+                    <input type="radio" name="answer9" value="Terminator">Terminator<br>
+                    <input class="correct" type="radio" name="answer9" value="Solenya">Solenya<br>
+                </form>
+            </h4>
+
+        <br>
+
+        <h2>What musical did the Sanchez family see in the false parasite memory?</h2>  
+            <h4>
+                <form>
+                    <input type="radio" name="answer10" value="Aida" checked>Aida<br>
+                    <input type="radio" name="answer10" value="Hamilton">Hamilton<br>
+                    <input type="radio" name="answer10" value="Spiderman the Musical">Spiderman the Musical<br>
+                    <input class="correct" type="radio" name="answer10" value="Hulk! The Musical">Hulk! The Musical<br>
+                </form>
+            </h4>
+
+        <br>
+
+        <h2>In episode "Meeseeks & Destroy", what is the goal of the Meeseeks for Jerry?</h2>  
+            <h4>
+                <form>
+                    <input type="radio" name="answer11" value="Make him a man" checked>Make him a man<br>
+                    <input class="correct" type="radio" name="answer11" value="Take two strokes off his golf game">Take two strokes off his golf game<br>
+                    <input type="radio" name="answer11" value="Repair his love with Beth">Repair his love with Beth<br>
+                    <input type="radio" name="answer11" value="Open the pickle jar">Open the pickle jar<br>
+                </form>
+            </h4>           
+        <br>
+    <br>
+        <form id="submit"><input type="submit" value="Submit"></form>
+    <br>
+        <br>
+            <script src="assets/javascript/app.js"></script>
+    </body>
+</html>
